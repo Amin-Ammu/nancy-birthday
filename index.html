@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Nancy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #ffe5b4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #d6336c;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.3rem;
+      color: #5c3d5e;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .upload-area {
+      margin-top: 40px;
+    }
+    .upload-area input {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Nancy! 🎉🎂</h1>
+  <p>
+    Wishing you a day filled with love, laughter, and all the joy your heart can hold.
+    May this new year bring you blessings beyond your imagination. You are so special —
+    today and every day! 💖
+  </p>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1603575448362-5fefbd15a174?auto=format&fit=crop&w=600&q=80" alt="cake" />
+    <img src="https://images.unsplash.com/photo-1584466977770-6fda6e16b1a6?auto=format&fit=crop&w=600&q=80" alt="balloons" />
+    <img src="https://images.unsplash.com/photo-1603570428434-27db7fe776d3?auto=format&fit=crop&w=600&q=80" alt="gifts" />
+  </div>
+
+  <div class="upload-area">
+    <p>You can add more pictures here (for personal editing):</p>
+    <input type="file" multiple />
+  </div>
+</body>
+</html>
